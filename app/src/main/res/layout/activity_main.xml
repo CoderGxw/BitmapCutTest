@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+<com.example.bitmapcuttest.ScreenShotView
+    android:id="@+id/screenShotView"
+    android:layout_width="480dp"
+    android:layout_height="640dp"/>
+<LinearLayout
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="#ffffff">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="选择要截取区域"/>
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/bottom"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_alignParentBottom="true"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/cancel_btn"
+        android:text="取消"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/certain_btn"
+        android:text="确定"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/restart_btn"
+        android:text="重试"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"/>
+</LinearLayout>
+
+</RelativeLayout>
